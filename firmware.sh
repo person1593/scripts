@@ -13,8 +13,8 @@ function flash_rwlegacy()
 
 	# set dev mode legacy boot / AltFw flags
 	if [ "${isChromeOS}" = true ]; then
-		crossystem dev_boot_legacy=1 > /dev/null 2>&1
-		crossystem dev_boot_altfw=1 > /dev/null 2>&1
+		crossystem.old dev_boot_legacy=1 > /dev/null 2>&1
+		crossystem.old dev_boot_altfw=1 > /dev/null 2>&1
 	fi
 
 	#determine proper file
